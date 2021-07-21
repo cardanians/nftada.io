@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "f6e3dc53-b9a1-4d96-82e7-7bcc09bdc627",
+		"name": "nftada.io",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "image add",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{uploadData}}"
+				},
+				"url": {
+					"raw": "{{api}}/image/add",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"image",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "image list",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api}}/image/list",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"image",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policy new",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test\",\r\n    \"slot_lock\": \"0\"\r\n}"
+				},
+				"url": {
+					"raw": "{{api}}/policy/new",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"policy",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policy list",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/policy/list",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"policy",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "policy delete",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{api}}/policy/delete/{{policyId}}",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"policy",
+						"delete",
+						"{{policyId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mint new",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"nft\",\r\n    \"name\": \"Explorer8\",\r\n    \"ipfs\": \"QmRQSttZD1NaSMcgTWYawMC6ssHA6Xbq87oJ3jnPnDxTSW\",\r\n    \"policyid\": \"6d4655027ffc02f5d364bcf6285e47a28c11d804bedc5a2cbe34488b\",\r\n    \"metadata\":{\"url\":\"https:\\/\\/adapools.org\",\"key\":\"value\"},\r\n    \"receiver\": \"addr1qyj63mt0l6pae0aq67x86nrmswvgtn7zzkweuwkhjdfjav29sxvqsv7ppvxjv2ptx45ra97m0fcy2ukqdknhzz6u28vs4kqnhv\",\r\n    \"units\": 1\r\n}"
+				},
+				"url": {
+					"raw": "{{api}}/mint/new",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"mint",
+						"new"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mint list",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{api}}/mint/list",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"mint",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{api-key}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "api-key",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "api",
+			"value": "https://api.nftada.io/v1"
+		},
+		{
+			"key": "api-key",
+			"value": "some-api-key"
+		},
+		{
+			"key": "uploadData",
+			"value": "image source"
+		},
+		{
+			"key": "policyId",
+			"value": "some-policy-id"
+		}
+	]
+}
