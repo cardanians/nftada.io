@@ -6,6 +6,28 @@
 	},
 	"item": [
 		{
+			"name": "info",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{{uploadData}}"
+				},
+				"url": {
+					"raw": "{{api}}/image/add",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"image",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "image add",
 			"request": {
 				"method": "PUT",
