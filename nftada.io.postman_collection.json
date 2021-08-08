@@ -160,7 +160,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"type\": \"nft\",\r\n    \"name\": \"Explorer8\",\r\n    \"ipfs\": \"QmRQSttZD1NaSMcgTWYawMC6ssHA6Xbq87oJ3jnPnDxTSW\",\r\n    \"policyid\": \"6d4655027ffc02f5d364bcf6285e47a28c11d804bedc5a2cbe134488b\",\r\n    \"metadata\":{\"url\":\"https:\\/\\/adapools.org\",\"key\":\"value\"},\r\n    \"receiver\": \"addr1qyj63mt0l6pae0aq67x86nrmswvgtn7zzkweuwkhjdfjav29sxvqsv7ppvxjv2ptx45ra97m0fcy2ukqdknhzz6u28vs4kqnhv\",\r\n    \"units\": 1\r\n}"
+					"raw": "{\r\n    \"type\": \"nft\",\r\n    \"name\": \"Explorer8\",\r\n    \"ipfs\": \"QmRQSttZD1NaSMcgT...6Xbq8J3jnPnDxTSW\",\r\n    \"policyid\": \"6d4655027ffc02f...d8be5a2cbe134488b\",\r\n    \"metadata\":{\"url\":\"https:\\/\\/adapools.org\",\"key\":\"value\"},\r\n    \"receiver\": \"addr1qyj63mt0l...7x86nrmswv\",\r\n    \"units\": 1\r\n}"
 				},
 				"url": {
 					"raw": "{{api}}/mint/new",
