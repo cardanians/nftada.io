@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{{uploadData}}"
+					"raw": ""
 				},
 				"url": {
 					"raw": "{{api}}/info/default",
